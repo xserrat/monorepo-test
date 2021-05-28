@@ -7,4 +7,5 @@ namespace YourMonorepo\FirstPackage;
 final class FirstClass
 {
     public const VERSION = 'main';
+    public const TEST = '1';
 }
