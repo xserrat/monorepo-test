@@ -77,7 +77,7 @@ jobs:
         run: "cd packages/${{ matrix.package }}/tmp && composer install && cd ../../.."
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "cd packages/${{ matrix.package }}/tmp && bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(cat ../../../CHANGELOG.md)\" > ../CHANGELOG.md && rm -rf tmp"
+        run: "cd packages/${{ matrix.package }}/tmp && bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md && rm -rf tmp"
 
   make_commit:
     needs: split_monorepo_changelog
