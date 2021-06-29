@@ -33,7 +33,7 @@ jobs:
       # required for matrix of packages set
       -   uses: shivammathur/setup-php@v2
           with:
-            php-version: 8.0
+            php-version: 7.4
             coverage: none
 
       -   uses: "ramsey/composer-install@v1"
@@ -67,6 +67,11 @@ jobs:
           repository: pheature-flags/monorepo-changelog-filter
           path: packages/${{ matrix.package }}/tmp
           ref: issue#1-create-prototype
+
+      -   uses: shivammathur/setup-php@v2
+          with:
+            php-version: 8.0
+            coverage: none
 
       - name: "install script dependencies"
         run: "cd packages/${{ matrix.package }}/tmp && composer install && cd ../../.."
