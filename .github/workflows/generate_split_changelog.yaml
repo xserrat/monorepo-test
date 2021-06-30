@@ -1,4 +1,4 @@
-name: generate_changelog
+name: generate_split_changelog
 on:
   push:
     tags:
@@ -52,19 +52,32 @@ jobs:
           path: packages/${{ matrix.package }}/tmp
           ref: issue#1-create-prototype
 
-      -   uses: shivammathur/setup-php@v2
-          with:
-            php-version: 8.0
-            coverage: none
+      -
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.0
+          coverage: none
 
       - name: "install script dependencies"
-        run: "cd packages/${{ matrix.package }}/tmp && composer install && cd ../../.."
+        run: "composer install"
+        env:
+          working-directory: packages/${{ matrix.package }}/tmp
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "cd packages/${{ matrix.package }}/tmp && bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md && rm -rf tmp"
+        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md && rm -rf tmp"
+        env:
+          working-directory: packages/${{ matrix.package }}/tmp
 
-      - name: "Checkout"
-        uses: "actions/checkout@v2"
+      - name: ls changelog:filter
+        run: "ls -la packages/${{ matrix.package }}/tmp"
+        env:
+          working-directory: packages/${{ matrix.package }}/tmp
+
+      - name: ls changelog:filter
+        run: "git status"
+#
+#      - name: "Checkout"
+#        uses: "actions/checkout@v2"
 
       - name: "Commit changes"
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
