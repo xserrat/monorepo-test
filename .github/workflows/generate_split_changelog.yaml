@@ -65,7 +65,7 @@ jobs:
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md"
+        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/xserrat/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md"
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: Remove temporary folder
