@@ -60,18 +60,15 @@ jobs:
 
       - name: "install script dependencies"
         run: "composer install"
-        env:
-          working-directory: packages/${{ matrix.package }}/tmp
+        working-directory: packages/${{ matrix.package }}/tmp
 
       - name: "Create ${{ matrix.package }} Changelog"
         run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md && rm -rf tmp"
-        env:
-          working-directory: packages/${{ matrix.package }}/tmp
+        working-directory: packages/${{ matrix.package }}/tmp
 
       - name: ls changelog:filter
         run: "ls -la packages/${{ matrix.package }}/tmp"
-        env:
-          working-directory: packages/${{ matrix.package }}/tmp
+        working-directory: packages/${{ matrix.package }}/tmp
 
       - name: ls changelog:filter
         run: "git status"
