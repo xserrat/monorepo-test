@@ -14,6 +14,7 @@ final class FirstClass
     public function __construct()
     {
         $this->version = self::VERSION;
+        $hola = 'test';
     }
 
     public function version(): string
