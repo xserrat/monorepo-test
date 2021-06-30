@@ -45,14 +45,14 @@ jobs:
       - name: "Checkout"
         uses: "actions/checkout@v2"
 
-      -
+      - name: "Clone pheature-flags/monorepo-changelog-filter"
         uses: "actions/checkout@v2"
         with:
           repository: pheature-flags/monorepo-changelog-filter
           path: packages/${{ matrix.package }}/tmp
           ref: issue#1-create-prototype
 
-      -
+      - name: "Setup PHP for pheature-flags/monorepo-changelog-filter"
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.0
@@ -72,11 +72,8 @@ jobs:
         run: "rm -rf tmp/"
         working-directory: packages/${{ matrix.package }}
 
-      - name: ls changelog:filter
-        run: "git status"
-#
-#      - name: "Checkout"
-#        uses: "actions/checkout@v2"
+      - name: git status
+        run: "git status && cat packages/${{ matrix.package }}/CHANGELOG.md"
 
       - name: "Commit changes"
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
