@@ -69,10 +69,6 @@ jobs:
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: ls changelog:filter
-        run: "ls -la packages/${{ matrix.package }}/tmp"
-        working-directory: packages/${{ matrix.package }}/tmp
-
-      - name: ls changelog:filter
         run: "git status"
 #
 #      - name: "Checkout"
