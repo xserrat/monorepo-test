@@ -56,7 +56,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           package-directory: 'packages/${{ matrix.package }}'
-          split-repository-organization: 'kpicaza'
+          split-repository-organization: 'xserrat'
           split-repository-name: '${{ matrix.package }}'
           user-name: ${{ github.event.pusher.name }}
           user-email: ${{ github.event.pusher.email }}
@@ -78,7 +78,7 @@ jobs:
         with:
           tag: ${{ steps.get_version.outputs.version }}
           package-directory: 'packages/${{ matrix.package }}'
-          split-repository-organization: 'kpicaza'
+          split-repository-organization: 'xserrat'
           split-repository-name: '${{ matrix.package }}'
           user-name: ${{ github.event.pusher.name }}
           user-email: ${{ github.event.pusher.email }}
