@@ -76,7 +76,7 @@ jobs:
         run: echo "${{ steps.full_changelog.outputs.content }}"
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"${{ steps.full_changelog.outputs.content }}\" > ../CHANGELOG.md"
+        run: "bin/console changelog:filter monorepo-test/${{ matrix.package }} ${{ steps.full_changelog.outputs.content }} > ../CHANGELOG.md"
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: Remove temporary folder
