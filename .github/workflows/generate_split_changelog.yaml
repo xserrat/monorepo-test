@@ -1,15 +1,17 @@
 name: generate_split_changelog
 on:
-  push:
-    tags:
-      - '*'
+  workflow_run:
+    workflows:
+      - "generate_changelog"
+    types:
+      - completed
 
 jobs:
   provide_packages_json:
     # see json juggling: https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#example-6
     # see https://stackoverflow.com/a/62953566/1348344
     runs-on: ubuntu-latest
-
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       -
         uses: actions/checkout@v2
@@ -65,7 +67,7 @@ jobs:
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(wget https://raw.githubusercontent.com/kpicaza/monorepo-test/main/CHANGELOG.md)\" > ../CHANGELOG.md"
+        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(cat ../../../CHANGELOG.md)\" > ../CHANGELOG.md"
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: Remove temporary folder
