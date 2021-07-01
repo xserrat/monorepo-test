@@ -1,18 +1,18 @@
 name: Split Monorepo Dev-Master
 
 on:
-  push:
-    branches:
-      - main
-    tags:
-      - '*'
+  workflow_run:
+    workflows:
+      - "generate_split_changelog"
+    types:
+      - completed
 
 jobs:
   provide_packages_json:
     # see json juggling: https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#example-6
     # see https://stackoverflow.com/a/62953566/1348344
     runs-on: ubuntu-latest
-
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       -
         uses: actions/checkout@v2
