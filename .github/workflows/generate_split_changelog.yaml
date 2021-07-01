@@ -66,8 +66,17 @@ jobs:
         run: "composer install"
         working-directory: packages/${{ matrix.package }}/tmp
 
+      - name: Read package.json
+        id: full_changelog
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./CHANGELOG.md
+
+      - name: Echo CHANGELOG.md
+        run: echo "${{ steps.full_changelog.outputs.content }}"
+
       - name: "Create ${{ matrix.package }} Changelog"
-        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"$(cat ../../../CHANGELOG.md)\" > ../CHANGELOG.md"
+        run: "bin/console changelog:filter pheature-flags/${{ matrix.package }} \"${{ steps.full_changelog.outputs.content }}\" > ../CHANGELOG.md"
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: Remove temporary folder
