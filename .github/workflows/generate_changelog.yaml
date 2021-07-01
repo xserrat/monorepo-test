@@ -1,6 +1,8 @@
 name: generate_changelog
 on:
   push:
+    branches:
+      - master
     tags:
       - '*'
 
