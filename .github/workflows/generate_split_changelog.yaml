@@ -67,7 +67,7 @@ jobs:
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: "Create ${{ matrix.package }} Changelog"
-        run: bin/console changelog:filter monorepo-test/${{ matrix.package }} "$(echo $(cat ../../../CHANGELOG.md))" > ./CHANGELOG.md
+        run: bin/console changelog:filter monorepo-test/${{ matrix.package }} "$(echo $(cat ../../../CHANGELOG.md))" > ../CHANGELOG.md
         working-directory: packages/${{ matrix.package }}/tmp
 
       - name: Remove temporary folder
