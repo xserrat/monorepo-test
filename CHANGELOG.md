@@ -4,21 +4,9 @@
 
 ## [v0.2.16](https://github.com/kpicaza/monorepo-test/tree/v0.2.16) (2021-07-01)
 
-**Implemented enhancements:**
-
-- \[first-package\] This is another test [\#23](https://github.com/kpicaza/monorepo-test/issues/23)
-
-**Fixed bugs:**
-
-- \[first-package\] fixxx [\#22](https://github.com/kpicaza/monorepo-test/issues/22)
-
 ## [v0.2.15](https://github.com/kpicaza/monorepo-test/tree/v0.2.15) (2021-06-30)
 
 ## [v0.2.14](https://github.com/kpicaza/monorepo-test/tree/v0.2.14) (2021-06-30)
-
-**Fixed bugs:**
-
-- \[second-package\] Remove tmp file [\#19](https://github.com/kpicaza/monorepo-test/issues/19)
 
 ## [v0.2.13](https://github.com/kpicaza/monorepo-test/tree/v0.2.13) (2021-06-30)
 
@@ -30,23 +18,11 @@
 
 ## [v0.2.9](https://github.com/kpicaza/monorepo-test/tree/v0.2.9) (2021-06-30)
 
-**Fixed bugs:**
-
-- \[second-package\] git status [\#15](https://github.com/kpicaza/monorepo-test/issues/15)
-
 ## [v0.2.8](https://github.com/kpicaza/monorepo-test/tree/v0.2.8) (2021-06-30)
 
 ## [v0.2.7](https://github.com/kpicaza/monorepo-test/tree/v0.2.7) (2021-06-29)
 
 ## [v0.2.6](https://github.com/kpicaza/monorepo-test/tree/v0.2.6) (2021-06-29)
-
-**Implemented enhancements:**
-
-- \[first-package\] Hello world!! [\#1](https://github.com/kpicaza/monorepo-test/issues/1)
-
-**Fixed bugs:**
-
-- \[second-package\] Hello world!!! [\#2](https://github.com/kpicaza/monorepo-test/issues/2)
 
 ## [v0.2.5](https://github.com/kpicaza/monorepo-test/tree/v0.2.5) (2021-06-29)
 
@@ -59,10 +35,6 @@
 ## [v0.2.1](https://github.com/kpicaza/monorepo-test/tree/v0.2.1) (2021-06-29)
 
 ## [v0.2.0](https://github.com/kpicaza/monorepo-test/tree/v0.2.0) (2021-06-29)
-
-**Fixed bugs:**
-
-- \[first-package\] test test test [\#3](https://github.com/kpicaza/monorepo-test/issues/3)
 
 ## [v0.1.10](https://github.com/kpicaza/monorepo-test/tree/v0.1.10) (2021-06-19)
 
