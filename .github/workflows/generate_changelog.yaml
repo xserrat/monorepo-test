@@ -10,15 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - shell: bash
-        run: |
-          echo '{"name":"${{ github.event.pusher.name }}","email":"${{ github.event.pusher.email }}"}' > pusher.json
-      - name: Upload pusher name and email
-        uses: actions/upload-artifact@v2
-        with:
-          name: get_pusher
-          path: pusher.json
-
       - name: "Checkout"
         uses: "actions/checkout@v2"
 
