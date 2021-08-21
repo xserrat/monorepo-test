@@ -44,6 +44,11 @@ jobs:
         package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 
     steps:
+      - shell: bash
+        run: |
+          echo '${{ github.event }}'
+          echo '{"name":"${{ github.event.pusher.name }}","email":"${{ github.event.pusher.email }}"}'
+
       - name: "Checkout"
         uses: "actions/checkout@v2"
 
@@ -110,15 +115,22 @@ jobs:
           signoff: true
 
           push: --force-with-lease
+      -
+        id: output_data
+        run: echo "::set-output name=matrix::$(vendor/bin/monorepo-builder packages-json)"
+
+    # this step is needed, so the output gets to the next defined job
+    outputs:
+      matrix: ${{ steps.output_data.outputs.matrix }}
 
   split_monorepo:
-    needs: provide_packages_json
+    needs: split_monorepo_changelog
 
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
+        package: ${{fromJson(needs.split_monorepo_changelog.outputs.matrix)}}
 
     steps:
       - shell: bash
