@@ -44,11 +44,6 @@ jobs:
         package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 
     steps:
-      - shell: bash
-        run: |
-          echo '${{ toJson(github.event) }}'
-          echo '{"name":"${{ github.event.pusher.name }}","email":"${{ github.event.pusher.email }}"}'
-
       - name: "Checkout"
         uses: "actions/checkout@v2"
 
@@ -94,11 +89,13 @@ jobs:
 
           # The name of the user that will be displayed as the author of the commit
           # Default: depends on the default_author input
-          author_name: ${{ github.event.pusher.name }}
+          author_name: ${{ github.event.workflow_run.head_commit.author.name }}
+
 
           # The email of the user that will be displayed as the author of the commit
           # Default: depends on the default_author input
-          author_email: ${{ github.event.pusher.email }}
+          author_email: ${{ github.event.workflow_run.head_commit.author.email }}
+
 
           # The message for the commit
           # Default: 'Commit from GitHub Actions (name of the workflow)'
@@ -115,60 +112,3 @@ jobs:
           signoff: true
 
           push: --force-with-lease
-
-    # this step is needed, so the output gets to the next defined job
-    outputs:
-      matrix: ${{ matrix }}
-
-  split_monorepo:
-    needs: split_monorepo_changelog
-
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        package: ${{fromJson(needs.split_monorepo_changelog.outputs.matrix)}}
-
-    steps:
-      - shell: bash
-        run: |
-          echo '${{ github.event }}'
-          echo '{"name":"${{ github.event.pusher.name }}","email":"${{ github.event.pusher.email }}"}'
-      -
-        uses: actions/checkout@v2
-      -
-        if: "!startsWith(github.ref, 'refs/tags/')"
-        # Uses an action in the root directory
-        name: Monorepo Split of packages ${{ matrix.package }}
-        uses: symplify/github-action-monorepo-split@1.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        with:
-          package-directory: 'packages/${{ matrix.package }}'
-          split-repository-organization: 'kpicaza'
-          split-repository-name: '${{ matrix.package }}'
-          user-name: '${{ github.event.pusher.name }}'
-          user-email: '${{ github.event.pusher.email }}'
-          branch: "main"
-
-      -
-        if: "startsWith(github.ref, 'refs/tags/')"
-        name: Get latest release version number
-        id: get_version
-        uses: battila7/get-version-action@v2
-
-      -
-        if: "startsWith(github.ref, 'refs/tags/')"
-        # Uses an action in the root directory
-        name: Monorepo Tagged Split of packages ${{ matrix.package }}
-        uses: symplify/github-action-monorepo-split@1.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        with:
-          tag: ${{ steps.get_version.outputs.version }}
-          package-directory: 'packages/${{ matrix.package }}'
-          split-repository-organization: 'kpicaza'
-          split-repository-name: '${{ matrix.package }}'
-          user-name: '${{ github.event.pusher.name }}'
-          user-email: '${{ github.event.pusher.email }}'
-          branch: "main"
