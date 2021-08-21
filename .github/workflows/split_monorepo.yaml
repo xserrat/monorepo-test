@@ -45,16 +45,6 @@ jobs:
         package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 
     steps:
-      - name: Download pusher
-        uses: actions/download-artifact@v2
-        with:
-          name: get_pusher
-      - name: Print the final result
-        id: pusher_data
-        shell: bash
-        run: |
-          echo "::set-output name=pusher::$(cat pusher.json)
-          rm -rf pusher.json
       -
         uses: actions/checkout@v2
       -
