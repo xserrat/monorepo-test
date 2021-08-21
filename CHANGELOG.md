@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] debug event [\#43](https://github.com/kpicaza/monorepo-test/pull/43)
 - \[second-package\] orchestrate workflows and debug [\#42](https://github.com/kpicaza/monorepo-test/pull/42)
 - \[first-package\] debug event on split action [\#41](https://github.com/kpicaza/monorepo-test/pull/41)
 - \[first-package\] mix changelog and split actions [\#40](https://github.com/kpicaza/monorepo-test/pull/40)
@@ -169,10 +170,6 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.1...v0.2.2)
 
-**Merged pull requests:**
-
-- \[second-package\] venga!!!! [\#6](https://github.com/kpicaza/monorepo-test/pull/6)
-
 ## [v0.2.1](https://github.com/kpicaza/monorepo-test/tree/v0.2.1) (2021-06-29)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.0...v0.2.1)
@@ -183,6 +180,7 @@
 
 **Merged pull requests:**
 
+- \[second-package\] venga!!!! [\#6](https://github.com/kpicaza/monorepo-test/pull/6)
 - \[first-package\] Hoal mundo [\#5](https://github.com/kpicaza/monorepo-test/pull/5)
 
 ## [v0.2.0](https://github.com/kpicaza/monorepo-test/tree/v0.2.0) (2021-06-29)
