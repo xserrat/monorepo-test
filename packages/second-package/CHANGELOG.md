@@ -4,10 +4,6 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.17...HEAD)
 
-**Merged pull requests:**
-
-- \[second-package\] Remove workflow from package and add step names [\#21](https://github.com/kpicaza/monorepo-test/pull/21)
-
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.16...v0.2.17)
@@ -19,6 +15,10 @@
 ## [v0.2.15](https://github.com/kpicaza/monorepo-test/tree/v0.2.15) (2021-06-30)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.14...v0.2.15)
+
+**Merged pull requests:**
+
+- \[second-package\] Remove workflow from package and add step names [\#21](https://github.com/kpicaza/monorepo-test/pull/21)
 
 ## [v0.2.14](https://github.com/kpicaza/monorepo-test/tree/v0.2.14) (2021-06-30)
 
