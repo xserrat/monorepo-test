@@ -20,7 +20,7 @@ jobs:
           user: kpicaza
           project: monorepo-test
           output: ./CHANGELOG.md
-          maxIssues: unlimited
+          maxIssues: 9999999
           issues: true
           issuesWoLabels: true
           pullRequests: true
