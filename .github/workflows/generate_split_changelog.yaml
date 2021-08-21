@@ -46,7 +46,7 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo '${{ fromJson(github.event) }}'
+          echo '${{ toJson(github.event) }}'
           echo '{"name":"${{ github.event.pusher.name }}","email":"${{ github.event.pusher.email }}"}'
 
       - name: "Checkout"
