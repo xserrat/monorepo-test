@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - echo with cat [\#33](https://github.com/kpicaza/monorepo-test/pull/33)
 - Use cat strategy to pass the generated changelog [\#32](https://github.com/kpicaza/monorepo-test/pull/32)
 - Use EOF without single quotes [\#31](https://github.com/kpicaza/monorepo-test/pull/31)
@@ -119,6 +120,7 @@
 **Merged pull requests:**
 
 - \[second-release\] hdgfdgd [\#11](https://github.com/kpicaza/monorepo-test/pull/11)
+- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.6](https://github.com/kpicaza/monorepo-test/tree/v0.2.6) (2021-06-29)
 
@@ -131,10 +133,6 @@
 **Fixed bugs:**
 
 - \[second-package\] Hello world!!! [\#2](https://github.com/kpicaza/monorepo-test/issues/2)
-
-**Merged pull requests:**
-
-- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.5](https://github.com/kpicaza/monorepo-test/tree/v0.2.5) (2021-06-29)
 
