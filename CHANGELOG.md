@@ -51,7 +51,6 @@
 
 - \[second-package\] Remove tmp file [\#19](https://github.com/kpicaza/monorepo-test/issues/19)
 - \[second-package\] Remove folder after filtering the changelog [\#20](https://github.com/kpicaza/monorepo-test/pull/20)
-- \[first-package\] Comment generate\_changelog\_yaml [\#12](https://github.com/kpicaza/monorepo-test/pull/12)
 
 ## [v0.2.13](https://github.com/kpicaza/monorepo-test/tree/v0.2.13) (2021-06-30)
 
@@ -81,6 +80,10 @@
 - \[second-package\] git status [\#15](https://github.com/kpicaza/monorepo-test/issues/15)
 
 ## [v0.2.8](https://github.com/kpicaza/monorepo-test/tree/v0.2.8) (2021-06-30)
+
+**Fixed bugs:**
+
+- \[first-package\] Comment generate\_changelog\_yaml [\#12](https://github.com/kpicaza/monorepo-test/pull/12)
 
 **Closed issues:**
 
