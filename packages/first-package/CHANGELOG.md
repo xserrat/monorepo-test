@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
 
 **Fixed bugs:**
@@ -88,6 +89,10 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.6...v0.2.7)
 
+**Merged pull requests:**
+
+- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
+
 ## [v0.2.6](https://github.com/kpicaza/monorepo-test/tree/v0.2.6) (2021-06-29)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.5...v0.2.6)
@@ -95,10 +100,6 @@
 **Implemented enhancements:**
 
 - \[first-package\] Hello world!! [\#1](https://github.com/kpicaza/monorepo-test/issues/1)
-
-**Merged pull requests:**
-
-- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.5](https://github.com/kpicaza/monorepo-test/tree/v0.2.5) (2021-06-29)
 
