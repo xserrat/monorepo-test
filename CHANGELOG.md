@@ -20,13 +20,16 @@
 **Merged pull requests:**
 
 - Show unreleased section in CHANGELOG.md [\#36](https://github.com/kpicaza/monorepo-test/pull/36)
-- Split monorepo after generating full and splitted changelogs [\#29](https://github.com/kpicaza/monorepo-test/pull/29)
 
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
 
 **Implemented enhancements:**
 
 - \[first-package\] Set output file for the full generated changelog [\#25](https://github.com/kpicaza/monorepo-test/pull/25)
+
+**Merged pull requests:**
+
+- Split monorepo after generating full and splitted changelogs [\#29](https://github.com/kpicaza/monorepo-test/pull/29)
 
 ## [v0.2.16](https://github.com/kpicaza/monorepo-test/tree/v0.2.16) (2021-07-01)
 
