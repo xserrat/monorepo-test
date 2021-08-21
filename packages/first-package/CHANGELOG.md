@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] mix changelog and split actions [\#40](https://github.com/kpicaza/monorepo-test/pull/40)
 - \[first-package\] try passing pusher by artifact [\#39](https://github.com/kpicaza/monorepo-test/pull/39)
 - \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
