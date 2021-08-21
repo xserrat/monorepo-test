@@ -6,7 +6,6 @@
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
 - echo with cat [\#33](https://github.com/kpicaza/monorepo-test/pull/33)
-- Use cat strategy to pass the generated changelog [\#32](https://github.com/kpicaza/monorepo-test/pull/32)
 - Use EOF without single quotes [\#31](https://github.com/kpicaza/monorepo-test/pull/31)
 - Try to fix multiline string as argument [\#30](https://github.com/kpicaza/monorepo-test/pull/30)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
@@ -20,16 +19,14 @@
 **Merged pull requests:**
 
 - Show unreleased section in CHANGELOG.md [\#36](https://github.com/kpicaza/monorepo-test/pull/36)
+- Split monorepo after generating full and splitted changelogs [\#29](https://github.com/kpicaza/monorepo-test/pull/29)
 
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
 
 **Implemented enhancements:**
 
+- Use cat strategy to pass the generated changelog [\#32](https://github.com/kpicaza/monorepo-test/pull/32)
 - \[first-package\] Set output file for the full generated changelog [\#25](https://github.com/kpicaza/monorepo-test/pull/25)
-
-**Merged pull requests:**
-
-- Split monorepo after generating full and splitted changelogs [\#29](https://github.com/kpicaza/monorepo-test/pull/29)
 
 ## [v0.2.16](https://github.com/kpicaza/monorepo-test/tree/v0.2.16) (2021-07-01)
 
