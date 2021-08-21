@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[second-package\] orchestrate workflows and debug [\#42](https://github.com/kpicaza/monorepo-test/pull/42)
 - \[first-package\] debug event on split action [\#41](https://github.com/kpicaza/monorepo-test/pull/41)
 - \[first-package\] mix changelog and split actions [\#40](https://github.com/kpicaza/monorepo-test/pull/40)
 - \[first-package\] try passing pusher by artifact [\#39](https://github.com/kpicaza/monorepo-test/pull/39)
