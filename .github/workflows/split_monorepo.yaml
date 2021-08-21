@@ -45,6 +45,16 @@ jobs:
         package: ${{fromJson(needs.provide_packages_json.outputs.matrix)}}
 
     steps:
+      - name: Download pusher
+        uses: actions/download-artifact@v2
+        with:
+          name: get_pusher
+      - name: Print the final result
+        id: pusher_data
+        shell: bash
+        run: |
+          echo "::set-output name=pusher::$(cat pusher.json)
+          rm -rf pusher.json
       -
         uses: actions/checkout@v2
       -
@@ -58,8 +68,8 @@ jobs:
           package-directory: 'packages/${{ matrix.package }}'
           split-repository-organization: 'kpicaza'
           split-repository-name: '${{ matrix.package }}'
-          user-name: ${{ github.event.head_commit.name }}
-          user-email: ${{ github.event.head_commit.email }}
+          user-name: ${{fromJson(steps.pusher_data.pusher).name}}
+          user-email: ${{fromJson(steps.pusher_data.pusher).email}}
           branch: "main"
 
       -
@@ -80,6 +90,6 @@ jobs:
           package-directory: 'packages/${{ matrix.package }}'
           split-repository-organization: 'kpicaza'
           split-repository-name: '${{ matrix.package }}'
-          user-name: ${{ github.event.head_commit.name }}
-          user-email: ${{ github.event.head_commit.email }}
+          user-name: ${{fromJson(steps.pusher_data.pusher).name}}
+          user-email: ${{fromJson(steps.pusher_data.pusher).email}}
           branch: "main"
