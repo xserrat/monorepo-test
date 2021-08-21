@@ -11,6 +11,7 @@
 
 **Fixed bugs:**
 
+- \[first-package\] update changelog commit message [\#37](https://github.com/kpicaza/monorepo-test/pull/37)
 - \[\#35\]\[first-package\] Fix filtered CHANGELOG.md path [\#34](https://github.com/kpicaza/monorepo-test/pull/34)
 
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
