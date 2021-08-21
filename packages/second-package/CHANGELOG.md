@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.17...HEAD)
 
+**Implemented enhancements:**
+
+- \[second-package\] orchestrate workflows and debug [\#42](https://github.com/kpicaza/monorepo-test/pull/42)
+
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.16...v0.2.17)
