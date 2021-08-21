@@ -7,11 +7,14 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] debug event [\#43](https://github.com/kpicaza/monorepo-test/pull/43)
 - \[first-package\] debug event on split action [\#41](https://github.com/kpicaza/monorepo-test/pull/41)
 - \[first-package\] mix changelog and split actions [\#40](https://github.com/kpicaza/monorepo-test/pull/40)
 - \[first-package\] try passing pusher by artifact [\#39](https://github.com/kpicaza/monorepo-test/pull/39)
 - \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
+- \[first-package\] Set output file for the full generated changelog [\#25](https://github.com/kpicaza/monorepo-test/pull/25)
+- \[first-package\] Set generate\_split\_changelog workflow dependant of the generate\_changelog [\#24](https://github.com/kpicaza/monorepo-test/pull/24)
 
 **Fixed bugs:**
 
@@ -22,10 +25,6 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.16...v0.2.17)
 
-**Implemented enhancements:**
-
-- \[first-package\] Set output file for the full generated changelog [\#25](https://github.com/kpicaza/monorepo-test/pull/25)
-
 ## [v0.2.16](https://github.com/kpicaza/monorepo-test/tree/v0.2.16) (2021-07-01)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.15...v0.2.16)
@@ -33,7 +32,6 @@
 **Implemented enhancements:**
 
 - \[first-package\] This is another test [\#23](https://github.com/kpicaza/monorepo-test/issues/23)
-- \[first-package\] Set generate\_split\_changelog workflow dependant of the generate\_changelog [\#24](https://github.com/kpicaza/monorepo-test/pull/24)
 
 **Fixed bugs:**
 
