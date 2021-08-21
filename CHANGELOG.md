@@ -7,13 +7,13 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] try passing pusher by artifact [\#39](https://github.com/kpicaza/monorepo-test/pull/39)
 - \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - echo with cat [\#33](https://github.com/kpicaza/monorepo-test/pull/33)
 - Use cat strategy to pass the generated changelog [\#32](https://github.com/kpicaza/monorepo-test/pull/32)
 - Use EOF without single quotes [\#31](https://github.com/kpicaza/monorepo-test/pull/31)
 - Try to fix multiline string as argument [\#30](https://github.com/kpicaza/monorepo-test/pull/30)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
-- Generate changelog always on main branch and read full changelog using the juliangruber/read-file-action [\#26](https://github.com/kpicaza/monorepo-test/pull/26)
 
 **Fixed bugs:**
 
@@ -76,6 +76,10 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.11...v0.2.12)
 
+**Implemented enhancements:**
+
+- Generate changelog always on main branch and read full changelog using the juliangruber/read-file-action [\#26](https://github.com/kpicaza/monorepo-test/pull/26)
+
 **Fixed bugs:**
 
 - \[first-package\] Fix working-directory [\#17](https://github.com/kpicaza/monorepo-test/pull/17)
@@ -120,7 +124,6 @@
 **Merged pull requests:**
 
 - \[second-release\] hdgfdgd [\#11](https://github.com/kpicaza/monorepo-test/pull/11)
-- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.6](https://github.com/kpicaza/monorepo-test/tree/v0.2.6) (2021-06-29)
 
@@ -133,6 +136,10 @@
 **Fixed bugs:**
 
 - \[second-package\] Hello world!!! [\#2](https://github.com/kpicaza/monorepo-test/issues/2)
+
+**Merged pull requests:**
+
+- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.5](https://github.com/kpicaza/monorepo-test/tree/v0.2.5) (2021-06-29)
 
