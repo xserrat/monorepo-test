@@ -93,13 +93,13 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.1...v0.2.2)
 
-**Merged pull requests:**
-
-- \[second-package\] venga!!!! [\#6](https://github.com/kpicaza/monorepo-test/pull/6)
-
 ## [v0.2.1](https://github.com/kpicaza/monorepo-test/tree/v0.2.1) (2021-06-29)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.0...v0.2.1)
+
+**Merged pull requests:**
+
+- \[second-package\] venga!!!! [\#6](https://github.com/kpicaza/monorepo-test/pull/6)
 
 ## [v0.2.0](https://github.com/kpicaza/monorepo-test/tree/v0.2.0) (2021-06-29)
 
