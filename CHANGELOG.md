@@ -7,6 +7,7 @@
 **Implemented enhancements:**
 
 - \[first-package\] enhancement!! [\#27](https://github.com/kpicaza/monorepo-test/issues/27)
+- \[first-package\] mix changelog and split actions [\#40](https://github.com/kpicaza/monorepo-test/pull/40)
 - \[first-package\] try passing pusher by artifact [\#39](https://github.com/kpicaza/monorepo-test/pull/39)
 - \[first-package\] change split action hook [\#38](https://github.com/kpicaza/monorepo-test/pull/38)
 - echo with cat [\#33](https://github.com/kpicaza/monorepo-test/pull/33)
@@ -14,6 +15,7 @@
 - Use EOF without single quotes [\#31](https://github.com/kpicaza/monorepo-test/pull/31)
 - Try to fix multiline string as argument [\#30](https://github.com/kpicaza/monorepo-test/pull/30)
 - \[first-package\] Fix repository name and try without double quotes [\#28](https://github.com/kpicaza/monorepo-test/pull/28)
+- Generate changelog always on main branch and read full changelog using the juliangruber/read-file-action [\#26](https://github.com/kpicaza/monorepo-test/pull/26)
 
 **Fixed bugs:**
 
@@ -25,6 +27,7 @@
 
 - Show unreleased section in CHANGELOG.md [\#36](https://github.com/kpicaza/monorepo-test/pull/36)
 - Split monorepo after generating full and splitted changelogs [\#29](https://github.com/kpicaza/monorepo-test/pull/29)
+- \[second-package\] Remove workflow from package and add step names [\#21](https://github.com/kpicaza/monorepo-test/pull/21)
 
 ## [v0.2.17](https://github.com/kpicaza/monorepo-test/tree/v0.2.17) (2021-07-01)
 
@@ -51,10 +54,6 @@
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.14...v0.2.15)
 
-**Merged pull requests:**
-
-- \[second-package\] Remove workflow from package and add step names [\#21](https://github.com/kpicaza/monorepo-test/pull/21)
-
 ## [v0.2.14](https://github.com/kpicaza/monorepo-test/tree/v0.2.14) (2021-06-30)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.13...v0.2.14)
@@ -75,10 +74,6 @@
 ## [v0.2.12](https://github.com/kpicaza/monorepo-test/tree/v0.2.12) (2021-06-30)
 
 [Full Changelog](https://github.com/kpicaza/monorepo-test/compare/v0.2.11...v0.2.12)
-
-**Implemented enhancements:**
-
-- Generate changelog always on main branch and read full changelog using the juliangruber/read-file-action [\#26](https://github.com/kpicaza/monorepo-test/pull/26)
 
 **Fixed bugs:**
 
