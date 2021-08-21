@@ -52,6 +52,10 @@
 - \[second-package\] Remove tmp file [\#19](https://github.com/kpicaza/monorepo-test/issues/19)
 - \[second-package\] Remove folder after filtering the changelog [\#20](https://github.com/kpicaza/monorepo-test/pull/20)
 
+**Merged pull requests:**
+
+- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
+
 ## [v0.2.13](https://github.com/kpicaza/monorepo-test/tree/v0.2.13) (2021-06-30)
 
 **Fixed bugs:**
@@ -104,10 +108,6 @@
 **Fixed bugs:**
 
 - \[second-package\] Hello world!!! [\#2](https://github.com/kpicaza/monorepo-test/issues/2)
-
-**Merged pull requests:**
-
-- \[first-package\] try 7 [\#10](https://github.com/kpicaza/monorepo-test/pull/10)
 
 ## [v0.2.5](https://github.com/kpicaza/monorepo-test/tree/v0.2.5) (2021-06-29)
 
